@@ -1,0 +1,9 @@
+services:
+  node:
+    build: ./
+    image: doty/eleventy
+    network_mode: host
+    container_name: doty
+    working_dir: /home/node/app
+    volumes:
+     - ./src:/home/node/app/src

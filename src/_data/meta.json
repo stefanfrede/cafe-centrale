@@ -1,0 +1,11 @@
+{
+	"title": "doty",
+	"url": "https://doty.frede.dev",
+	"language": "de",
+	"description": "A containerised minimal starter kit for Eleventy with custom elements.",
+	"author": {
+		"name": "Stefan Frede",
+		"email": "web.5173@frede.email",
+		"url": "https://www.frede.dev/"
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"name": "cafe_cenrtale",
+	"version": "0.1.0",
+	"engines": {
+		"node": ">=22",
+		"npm": ">=10"
+	},
+	"description": "The website of Café Centrale, an Italian bistro in Hamburg Ottensen.",
+	"type": "module",
+	"scripts": {
+		"prebuild": "run-s clean",
+		"build": "eleventy",
+		"prestart": "run-s clean",
+		"start": "eleventy --serve --quiet",
+		"clean": "rimraf _site",
+		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
+		"benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"keywords": [
+		"eleventy",
+		"docker",
+		"webc"
+	],
+	"author": {
+		"name": "Stefan Frede",
+		"email": "web.5173@frede.email",
+		"url": "https://www.frede.dev/"
+	},
+	"license": "MIT",
+	"private": "true",
+	"bugs": {
+		"url": ""
+	},
+	"homepage": "https://cafecentrale.com/",
+	"devDependencies": {
+		"@11ty/eleventy": "^3.0.0",
+		"@11ty/eleventy-plugin-webc": "^0.11.2",
+		"@biomejs/biome": "1.9.4",
+		"cross-env": "^7.0.3",
+		"npm-run-all": "^4.1.5",
+		"rimraf": "^6.0.1"
+	},
+	"volta": {
+		"node": "22.14.0"
+	},
+	"dependencies": {
+		"@11ty/eleventy-img": "^6.0.2"
+	}
+}

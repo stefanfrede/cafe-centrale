@@ -1,0 +1,21 @@
+html {
+  --primary: var(--blue-6);
+
+  scrollbar-color: var(--scrollthumb-color) transparent;
+  accent-color: var(--primary, var(--link));
+  caret-color: var(--primary, var(--link));
+  color: var(--text-1);
+  background-color: var(--surface-1);
+}
+
+a[href] {
+  color: var(--primary, var(--link));
+
+  &:visited {
+    color: var(--link-visited);
+  }
+}
+
+:focus-visible {
+  outline-color: var(--primary, var(--link));
+}

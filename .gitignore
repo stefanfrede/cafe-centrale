@@ -1,0 +1,4 @@
+_mkcert/
+_site/
+node_modules/
+.cache

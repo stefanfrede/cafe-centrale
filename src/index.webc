@@ -1,0 +1,39 @@
+---
+layout: base.webc
+---
+
+<l-container data-gutters>
+	<the-cover>
+		<l-stack>
+			<a href="/">
+			  <img src="/img/logo.png" alt="Cafe Centralé" />
+			</a>
+			<l-center style="--measure: 100%" data-intrinsic>
+			  <nav>
+			    <l-cluster role="list">
+			      <div role="listitem"><a href="#">Pasta des Tages</a></div>
+			      <div role="listitem"><a href="#">Klassische Pasta</a></div>
+			      <div role="listitem"><a href="#">Abendkarte</a></div>
+			      <div role="listitem"><a href="#">Weinkarte</a></div>
+			      <div role="listitem"><a href="#">Gutscheine</a></div>
+			      <div role="listitem"><a href="#">Über Romeo</a></div>
+			    </l-cluster>
+			  </nav>
+			</l-center>
+		</l-stack>
+	</the-cover>
+	<l-grid>
+		<l-frame style="--n: 3; --d: 4">
+			<img src="./img/pasta-01.jpg" alt="" />
+		</l-frame>
+		<l-frame style="--n: 3; --d: 4">
+			<img src="./img/pasta-02.jpg" alt="" />
+		</l-frame>
+		<l-frame style="--n: 3; --d: 4">
+			<img src="./img/pasta-03.jpg" alt="" />
+		</l-frame>
+		<l-frame style="--n: 3; --d: 4">
+			<img src="./img/pasta-04.jpg" alt="" />
+		</l-frame>
+	</l-grid>
+</l-container>

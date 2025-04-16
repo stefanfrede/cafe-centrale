@@ -1,0 +1,12 @@
+.cache
+.dockerignore
+.editorconfig
+.git
+.git-branches.toml
+.gitignore
+biome.json
+Dockerfile
+node_modules
+npm-debug.log
+README.md
+src

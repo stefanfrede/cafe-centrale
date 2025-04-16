@@ -1,0 +1,5 @@
+<script webc:type="js">
+  const title = $data.meta.title;
+
+  `<title>${title}</title>`;
+</script>

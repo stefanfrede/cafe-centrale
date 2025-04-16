@@ -1,0 +1,12 @@
+<header webc:root="override">
+	<slot></slot>
+</header>
+
+<style>
+header {
+	background-color: var(--surface-1);
+	padding-block: var(--grid-gutter);
+	position: sticky;
+	top: 0;
+}
+</style>

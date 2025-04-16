@@ -1,0 +1,10 @@
+:root {
+  --border-none: 0;
+  --border-thin: var(--space-3xs);
+  --border-normal: var(--space-2xs);
+  --border-thick: var(--space-xs);
+  --radius-none: 0;
+  --radius-sm: var(--space-3xs);
+  --radius-lg: var(--space-xs);
+  --radius-full: 1e5px;
+}
