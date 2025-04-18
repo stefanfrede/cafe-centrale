@@ -5,6 +5,7 @@ import { registerContainer } from './components/l-container.js';
 import { registerCover } from './components/l-cover.js';
 import { registerFrame } from './components/l-frame.js';
 import { registerGrid } from './components/l-grid.js';
+import { registerHeader } from './components/l-header.js';
 import { registerIcon } from './components/l-icon.js';
 import { registerImposter } from './components/l-imposter.js';
 import { registerReel } from './components/l-reel.js';
@@ -24,6 +25,7 @@ const app = () => {
 		registerCover();
 		registerFrame();
 		registerGrid();
+		registerHeader();
 		registerIcon();
 		registerImposter();
 		registerReel();

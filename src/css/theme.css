@@ -1,5 +1,5 @@
 html {
-  --primary: var(--blue-6);
+  --primary: var(--pink-4);
 
   scrollbar-color: var(--scrollthumb-color) transparent;
   accent-color: var(--primary, var(--link));

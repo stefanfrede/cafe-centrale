@@ -8,7 +8,7 @@
 
     <meta webc:is="meta-description" />
 
-    <link webc:is="cascade-layers" />
+		<link rel="stylesheet" href="/css/main.css" webc:keep />
 
     <link
       rel="apple-touch-icon"
@@ -37,7 +37,6 @@
   </head>
   <body>
     <template id="app" @html="content" webc:keep></template>
-    <script type="module" :src="getBundleFileUrl('js')" webc:keep></script>
-    <script type="module" src="/app.js" webc:keep></script>
+    <script type="module" src="/js/app.js" webc:keep></script>
   </body>
 </html>
