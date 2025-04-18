@@ -6,4 +6,5 @@ services:
     container_name: doty
     working_dir: /home/node/app
     volumes:
+     - ./_dist:/home/node/app/_dist
      - ./src:/home/node/app/src

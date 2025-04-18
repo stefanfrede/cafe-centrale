@@ -56,3 +56,4 @@ just stop
 just build
 ```
 
+You will find the build output in the `_dist` folder.

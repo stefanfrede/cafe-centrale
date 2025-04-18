@@ -4,21 +4,21 @@ ARG NODE_VERSION=22.14.0
 FROM node:${NODE_VERSION}-alpine
 
 # Createt the working directory in the container
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+RUN  mkdir -p /home/node/app/node_modules \
+	&& mkdir -p /home/node/app/_dist \
+	&& chown -R node:node /home/node/app
+
+# Ensure that all application files are owned by the non-root node user
+USER node
 
 # Set the working directory in the container
 WORKDIR /home/node/app
 
 # Copy the package.json and package-lock.json files
-# Adding the COPY instruction before running npm install or copying the application
-# code allows us to take advantage of Docker's caching mechanism
 COPY package*.json .
 
 # Install any needed dependencies specified in package.json
-RUN npm install
-
-# Ensure that all application files are owned by the non-root node user
-USER node
+RUN npm ci
 
 # Copy the application code with the appropriate permissions to the application directory on the container
 COPY --chown=node:node . .

@@ -10,8 +10,9 @@
 	"scripts": {
 		"prebuild": "run-s clean",
 		"build": "eleventy",
+		"postbuild": "rimraf _dist/* && cp -a _site/. _dist/",
 		"prestart": "run-s clean",
-		"start": "eleventy --serve --quiet",
+		"start": "eleventy --serve --incremental --quiet",
 		"clean": "rimraf _site",
 		"debug": "cross-env DEBUG=Eleventy* npx @11ty/eleventy",
 		"benchmark": "cross-env DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
@@ -20,11 +21,7 @@
 		"type": "git",
 		"url": ""
 	},
-	"keywords": [
-		"eleventy",
-		"docker",
-		"webc"
-	],
+	"keywords": ["eleventy", "docker", "webc"],
 	"author": {
 		"name": "Stefan Frede",
 		"email": "web.5173@frede.email",
@@ -40,14 +37,18 @@
 		"@11ty/eleventy": "^3.0.0",
 		"@11ty/eleventy-plugin-webc": "^0.11.2",
 		"@biomejs/biome": "1.9.4",
+		"browserslist": "^4.24.4",
 		"cross-env": "^7.0.3",
+		"lightningcss": "^1.29.3",
 		"npm-run-all": "^4.1.5",
-		"rimraf": "^6.0.1"
+		"rimraf": "^6.0.1",
+		"terser": "^5.39.0"
 	},
 	"volta": {
 		"node": "22.14.0"
 	},
 	"dependencies": {
-		"@11ty/eleventy-img": "^6.0.2"
+		"@11ty/eleventy-img": "^6.0.2",
+		"@11ty/eleventy-plugin-vite": "^6.0.0"
 	}
 }
