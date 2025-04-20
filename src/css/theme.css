@@ -1,5 +1,5 @@
 html {
-  --primary: var(--pink-4);
+  --primary: var(--blue-3);
 
   scrollbar-color: var(--scrollthumb-color) transparent;
   accent-color: var(--primary, var(--link));
@@ -18,4 +18,62 @@ a[href] {
 
 :focus-visible {
   outline-color: var(--primary, var(--link));
+}
+
+.btn,
+button,
+input:is([type="button"], [type="submit"], [type="reset"]) {
+  --btn-size: var(--step-0);
+  --btn-highlight-size: 0;
+
+  align-items: center;
+  background-color: var(--btn-bg);
+  border: var(--border-thin) solid var(--btn-border);
+  border-radius: var(--radius-sm);
+  box-shadow:
+    var(--shadow-2),
+    0 1px var(--surface-3),
+    0 0 0 var(--btn-highlight-size) var(--btn-highlight);
+  color: var(--btn-text);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: var(--btn-size);
+  font-weight: var(--font-bold);
+  gap: var(--space-2xs);
+  justify-content: center;
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-s);
+  text-align: center;
+  text-shadow: var(--btn-ink-shadow);
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition:
+      border-color 0.5s var(--ease-3) 3s,
+      box-shadow 145ms var(--ease-4),
+      outline-offset 145ms var(--ease-4);
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    box-shadow: var(--shadow-1);
+  }
+
+  &:not(:active):hover {
+    --btn-highlight-size: var(--space-2xs);
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+  }
+
+  & > * {
+    pointer-events: none;
+  }
+}
+
+dialog {
+  background-color: var(--dialog-bg);
 }

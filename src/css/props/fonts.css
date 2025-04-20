@@ -7,9 +7,16 @@
     Dank Mono, Operator Mono, Inconsolata, Fira Mono, ui-monospace, SF Mono,
     Monaco, Droid Sans Mono, Source Code Pro, Cascadia Code, Menlo, Consolas,
     DejaVu Sans Mono, monospace;
+  --font-rounded-sans:
+    ui-rounded, Hiragino Maru Gothic ProN, Quicksand, Comfortaa, Manjari,
+    Arial Rounded MT, Arial Rounded MT Bold, Calibri, source-sans-pro,
+    sans-serif;
   --font-sans: var(--font-system-ui);
   --font-serif: ui-serif, serif;
   --font-mono: var(--font-monospace-code);
+  --font-body: "Raleway", var(--font-rounded-sans);
+  --font-heading: "Raleway", var(--font-rounded-sans);
+  --font-display: "Sniglet", var(--font-rounded-sans);
   /**
    * Font weights
    */

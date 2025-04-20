@@ -5,13 +5,15 @@ import { registerContainer } from './components/l-container.js';
 import { registerCover } from './components/l-cover.js';
 import { registerFrame } from './components/l-frame.js';
 import { registerGrid } from './components/l-grid.js';
-import { registerHeader } from './components/l-header.js';
 import { registerIcon } from './components/l-icon.js';
 import { registerImposter } from './components/l-imposter.js';
 import { registerReel } from './components/l-reel.js';
 import { registerSidebar } from './components/l-sidebar.js';
 import { registerStack } from './components/l-stack.js';
 import { registerSwitcher } from './components/l-switcher.js';
+
+import { registerHeader } from './components/p-header.js';
+import { registerNavigation } from './components/p-navigation.js';
 
 const app = () => {
 	const support = 'customElements' in window;
@@ -28,6 +30,7 @@ const app = () => {
 		registerHeader();
 		registerIcon();
 		registerImposter();
+		registerNavigation();
 		registerReel();
 		registerSidebar();
 		registerStack();

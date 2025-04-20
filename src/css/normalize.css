@@ -1,3 +1,19 @@
+@font-face {
+  font-display: swap;
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-VF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Sniglet";
+  src: url("/fonts/Sniglet-webfont.ttf") format("truetype-variations");
+  font-weight: 800;
+  font-style: normal;
+}
+
 *,
 ::before,
 ::after {
@@ -17,7 +33,14 @@
 
 html {
   block-size: 100%;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
+  font-feature-settings:
+    "ss01" 1,
+    "ss03" 1,
+    "ss05" 1,
+    "ss08" 1,
+    "ss09" 1,
+    "ss11" 1;
   line-height: var(--leading-normal);
   text-size-adjust: none;
 
@@ -51,7 +74,7 @@ h4,
 h5,
 h6 {
   line-height: var(--leading-tight);
-  font-weight: var(--font-black);
+  font-weight: var(--font---font-medium);
   text-wrap: balance;
 }
 

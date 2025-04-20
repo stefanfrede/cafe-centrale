@@ -5,7 +5,7 @@ const styles = `
 
 	div {
 		--_size: var(--size, 1lh);
-		--_space: var(--space, 0.5cap);
+		--_space: var(--space, 1cap);
 
 	  &.with-icon {
 		  align-items: center;

@@ -1,0 +1,56 @@
+{
+    "day": [
+        {
+            "id": 0,
+            "label": "Pasta des Tages",
+            "target": "#pasta-of-the-day"
+        },
+        {
+            "id": 1,
+            "label": "Klassische Pasta",
+            "target": "#classic-pasta"
+        },
+        {
+            "id": 2,
+            "label": "Weinkarte",
+            "target": "#wine-list"
+        },
+        {
+            "id": 3,
+            "label": "Gutscheine",
+            "target": "#vouchers"
+        },
+        {
+            "id": 4,
+            "label": "Über Romeo",
+            "target": "#about-romeo"
+        }
+    ],
+    "evening": [
+        {
+            "id": 0,
+            "label": "Abendkarte",
+            "target": "#evening-menu"
+        },
+        {
+            "id": 1,
+            "label": "Klassische Pasta",
+            "target": "#classic-pasta"
+        },
+        {
+            "id": 2,
+            "label": "Weinkarte",
+            "target": "#wine-list"
+        },
+        {
+            "id": 3,
+            "label": "Gutscheine",
+            "target": "#vouchers"
+        },
+        {
+            "id": 4,
+            "label": "Über Romeo",
+            "target": "#about-romeo"
+        }
+    ]
+}

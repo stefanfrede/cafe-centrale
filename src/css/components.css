@@ -1,0 +1,22 @@
+p-header {
+  container: header / inline-size;
+  inset-block-start: 0;
+  position: sticky;
+
+  img {
+    block-size: auto;
+    inline-size: initial;
+    max-block-size: initial;
+    max-inline-size: 100%;
+  }
+}
+
+@container header (width >= 768px) {
+  p-header.is-stuck img {
+    block-size: initial;
+    inline-size: auto;
+    margin-inline: auto;
+    max-block-size: 100%;
+    max-inline-size: initial;
+  }
+}
