@@ -11,6 +11,7 @@
 		"prebuild": "run-s clean",
 		"build": "eleventy",
 		"postbuild": "rimraf _dist/* && cp -a _site/. _dist/",
+		"build-ghpages": "npx @11ty/eleventy --pathprefix=/cafe-centrale/",
 		"prestart": "run-s clean",
 		"start": "eleventy --serve --incremental --quiet",
 		"clean": "rimraf _site",
