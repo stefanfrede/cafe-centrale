@@ -33,6 +33,8 @@ export default async function (eleventyConfig) {
 		},
 
 		viteOptions: {
+			base: '/cafe-centrale/',
+
 			css: {
 				transformer: 'lightningcss',
 				lightningcss: {
