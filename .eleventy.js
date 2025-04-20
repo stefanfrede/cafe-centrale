@@ -15,6 +15,7 @@ export default async function (eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
 	eleventyConfig.addPassthroughCopy('src/css');
+	eleventyConfig.addPassthroughCopy('src/fonts');
 	eleventyConfig.addPassthroughCopy('src/js');
 
 	eleventyConfig.addPassthroughCopy({
@@ -23,6 +24,7 @@ export default async function (eleventyConfig) {
 
 	eleventyConfig.addPlugin(pluginVite, {
 		serverOptions: {
+			port: 8080,
 			watch: ['./src/css/**/*.css', './src/js/**/*.js'],
 			https: {
 				key: './_mkcert/localhost-key.pem',
@@ -45,6 +47,10 @@ export default async function (eleventyConfig) {
 
 			server: {
 				allowedHosts: true,
+				strictPort: true,
+				hmr: {
+					clientPort: 8080,
+				},
 			},
 		},
 	});

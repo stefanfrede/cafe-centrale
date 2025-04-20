@@ -15,37 +15,29 @@
 
     --scrollthumb-color: var(--gray-7);
 
-    & dialog {
-      background-color: var(--surface-1);
-    }
+    /* Button */
+    --btn-accent: initial;
+    --btn-text: var(--text-1);
 
-    & :is(button, .btn) {
-      --_highlight: var(--_highlight-light);
-      --_bg: var(--_bg-light);
-      --_ink-shadow: var(--_ink-shadow-light);
+    --btn-bg: var(----surface-1);
+    --btn-border: var(--surface-3);
 
-      &[type="reset"] {
-        --_text: var(--red-6);
-        --_border: var(--red-3);
-      }
-    }
+    --btn-highlight: color-mix(in oklab, var(--gray-4) 25%, transparent);
 
-    &
-      :is(
-        button,
-        .btn,
-        input:is([type="button"], [type="submit"], [type="reset"])
-      )[disabled] {
-      --_text: var(--gray-6);
-    }
+    --btn-ink-shadow: 0 1px 0 var(--gray-3);
 
-    &
-      :is(
-        textarea,
-        select,
-        input:not([type="button"], [type="submit"], [type="reset"])
-      ) {
-      background-color: var(--surface-2);
+    --btn-icon-color: var(--_accent, var(--link));
+
+    /* Dialog */
+    --dialog-bg: var(--surface-1);
+  }
+
+  .btn,
+  button,
+  input:is([type="button"], [type="submit"], [type="reset"]) {
+    &[disabled] {
+      --btn-bg: none;
+      --btn-text: var(--gray-6);
     }
   }
 }

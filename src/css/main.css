@@ -1,8 +1,10 @@
-@layer property, theme, normalize, layout, utility;
+@layer property, normalize, theme, layout, components, utility;
+
 @import url(props.css) layer(property);
+@import url(normalize.css) layer(normalize);
 @import url(theme.css) layer(theme);
 @import url(theme.dark.css) layer(theme.dark);
 @import url(theme.light.css) layer(theme.light);
-@import url(normalize.css) layer(normalize);
 @import url(layout.css) layer(layout);
+@import url(components.css) layer(components);
 @import url(utilities.css) layer(utility);
