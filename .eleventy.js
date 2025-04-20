@@ -1,7 +1,6 @@
 import pluginWebc from '@11ty/eleventy-plugin-webc';
 import pluginVite from '@11ty/eleventy-plugin-vite';
 
-import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 
 import browserslist from 'browserslist';
@@ -13,7 +12,6 @@ export default async function (eleventyConfig) {
 		components: './src/_components/**/*.webc',
 	});
 
-	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
 	eleventyConfig.addPassthroughCopy('src/css');
@@ -66,5 +64,4 @@ export const config = {
 		input: 'src',
 		layouts: '_layouts',
 	},
-	pathPrefix: "/cafe-centrale/",
 };
