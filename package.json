@@ -9,7 +9,7 @@
 	"type": "module",
 	"scripts": {
 		"prebuild": "run-s clean",
-		"build": "eleventy",
+		"build": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
 		"postbuild": "rimraf _dist/* && cp -a _site/. _dist/",
 		"prestart": "run-s clean",
 		"start": "eleventy --serve --incremental --quiet",
@@ -21,7 +21,11 @@
 		"type": "git",
 		"url": ""
 	},
-	"keywords": ["eleventy", "docker", "webc"],
+	"keywords": [
+		"eleventy",
+		"docker",
+		"webc"
+	],
 	"author": {
 		"name": "Stefan Frede",
 		"email": "web.5173@frede.email",

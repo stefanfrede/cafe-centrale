@@ -27,18 +27,8 @@ layout: base.webc
 			<page-navigation slot="nav"></page-navigation>
 		</p-navigation>
 	</p-header>
-	<l-grid>
-		<l-frame style="--n: 3; --d: 4">
-			<img src="./img/pasta-01.jpg" alt="" />
-		</l-frame>
-		<l-frame style="--n: 3; --d: 4">
-			<img src="./img/pasta-02.jpg" alt="" />
-		</l-frame>
-		<l-frame style="--n: 3; --d: 4">
-			<img src="./img/pasta-03.jpg" alt="" />
-		</l-frame>
-		<l-frame style="--n: 3; --d: 4">
-			<img src="./img/pasta-04.jpg" alt="" />
-		</l-frame>
-	</l-grid>
+	<l-stack>
+		<page-teaser></page-teaser>
+		<page-welcome></page-welcome>
+	</l-stack>
 </l-container>

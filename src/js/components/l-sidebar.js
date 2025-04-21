@@ -58,10 +58,10 @@ const template = document.createElement('template');
 template.innerHTML = `
 	  <div>
 	  	<div>
-		    <slot name="sidebar"></slot>
+		    <slot name="start"></slot>
 		  </div>
 	  	<div>
-		    <slot></slot>
+		    <slot name="end"></slot>
 		  </div>
 	  </div>
 	`;

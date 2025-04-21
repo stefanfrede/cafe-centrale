@@ -9,7 +9,7 @@ html {
 }
 
 a[href] {
-  color: var(--primary, var(--link));
+  color: var(--link);
 
   &:visited {
     color: var(--link-visited);
@@ -17,7 +17,16 @@ a[href] {
 }
 
 :focus-visible {
-  outline-color: var(--primary, var(--link));
+  outline-color: var(--link);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-3);
 }
 
 .btn,

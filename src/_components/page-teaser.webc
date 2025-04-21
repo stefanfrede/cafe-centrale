@@ -1,0 +1,5 @@
+<l-grid>
+  <l-frame webc:for="item of $data.teaser" style="--n: 3; --d: 4">
+    <img :src="`/img/${item.name}`" :alt="item.alt" />
+  </l-frame>
+</l-grid>
