@@ -1,0 +1,18 @@
+<l-sidebar style="--side-width: 45ch" data-side>
+  <l-frame slot="start">
+    <img
+      src="/img/front-of-cafe.jpg"
+      alt="Ein Bild von Gästen, die vor dem Café sitzen, und Romeo, der im Eingang steht und das Treiben beobachtet."
+    />
+  </l-frame>
+  <l-box slot="end">
+    <l-stack style="--space: var(--space-s)">
+      <h2>Ciao Pasta-Lovers</h2>
+      <p>
+        Genießen Sie im Café Centrale leckere hausgemachte vegane Pasta, Gnocchi
+        und Ravioli mit verschiedenen Saucen in gemütlicher Atmosphäre! Perfekt
+        für eine Mittagspause mit Kollegen oder Freunden.
+      </p>
+    </l-stack>
+  </l-box>
+</l-sidebar>

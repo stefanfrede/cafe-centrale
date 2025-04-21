@@ -8,8 +8,8 @@ const styles = `
 		--_border-width: var(--border-width, var(--border-thin));
 		--_padding: var(--padding, var(--space-m));
 
-	  background-color: var(--surface-2);
-		border: var(--_border-width) solid;
+	  background-color: var(--surface-5);
+		border: var(--_border-width) solid var(--text-3);
 	  color: var(--text-1);
 	  flex-grow: 1;
 	  padding: var(--_padding);

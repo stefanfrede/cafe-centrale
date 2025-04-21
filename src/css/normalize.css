@@ -74,26 +74,30 @@ h4,
 h5,
 h6 {
   line-height: var(--leading-tight);
-  font-weight: var(--font---font-medium);
+  font-weight: var(--font-bold);
   text-wrap: balance;
 }
 
 h1 {
   font-size: var(--step-5);
   max-inline-size: var(--measure-header-1);
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: var(--step-4);
   max-inline-size: var(--measure-header-2);
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: var(--step-3);
 }
+
 h4 {
   font-size: var(--step-2);
 }
+
 h5 {
   font-size: var(--step-1);
 }

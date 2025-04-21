@@ -33,7 +33,7 @@ export default async function (eleventyConfig) {
 		},
 
 		viteOptions: {
-			base: '/cafe-centrale/',
+			base: process.env.ELEVENTY_ENV === 'production' ? '/cafe-centrale/' : '',
 
 			css: {
 				transformer: 'lightningcss',
