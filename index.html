@@ -18,8 +18,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/cafe-centrale/assets/favicon-16x16-B4HIqXSS.png">
 
     <link rel="manifest" href="/cafe-centrale/assets/site-BwHFeIBa.webmanifest">
-    <script type="module" crossorigin src="/cafe-centrale/assets/index-BUsxpwcd.js"></script>
-    <link rel="stylesheet" crossorigin href="/cafe-centrale/assets/index-DLNM2c7V.css">
+    <script type="module" crossorigin src="/cafe-centrale/assets/index-BneZhkXJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/cafe-centrale/assets/index-BWvlACob.css">
   </head>
   <body>
     <template id="app"><l-container data-gutters="">
@@ -56,20 +56,39 @@
 </ul>
 		</p-navigation>
 	</p-header>
-	<l-grid>
-		<l-frame style="--n: 3; --d: 4">
-			<picture><source type="image/webp" srcset="/cafe-centrale/assets/6Cj1PVb4-j-1512-XnwWqZv1.webp 1512w"><img src="/cafe-centrale/assets/6Cj1PVb4-j-1512-BI_pxIvM.jpeg" alt="" width="1512" height="2016"></picture>
-		</l-frame>
-		<l-frame style="--n: 3; --d: 4">
-			<picture><source type="image/webp" srcset="/cafe-centrale/assets/_b0W_Pjt9r-600-CRuqF3AK.webp 600w"><img src="/cafe-centrale/assets/_b0W_Pjt9r-600-CqoFJjvS.jpeg" alt="" width="600" height="800"></picture>
-		</l-frame>
-		<l-frame style="--n: 3; --d: 4">
-			<picture><source type="image/webp" srcset="/cafe-centrale/assets/fUBX1I44Gu-600-C0yjzPG_.webp 600w"><img src="/cafe-centrale/assets/fUBX1I44Gu-600-C-Joh1Rc.jpeg" alt="" width="600" height="800"></picture>
-		</l-frame>
-		<l-frame style="--n: 3; --d: 4">
-			<picture><source type="image/webp" srcset="/cafe-centrale/assets/WLJleJdape-600-DrqAND0v.webp 600w"><img src="/cafe-centrale/assets/WLJleJdape-600-CUIDnq0u.jpeg" alt="" width="600" height="800"></picture>
-		</l-frame>
-	</l-grid>
+	<l-stack>
+		<l-grid>
+  <l-frame style="--n: 3; --d: 4">
+    <picture><source type="image/webp" srcset="/cafe-centrale/assets/6Cj1PVb4-j-1512-XnwWqZv1.webp 1512w"><img src="/cafe-centrale/assets/6Cj1PVb4-j-1512-BI_pxIvM.jpeg" alt="" width="1512" height="2016"></picture>
+  </l-frame>
+<l-frame style="--n: 3; --d: 4">
+    <picture><source type="image/webp" srcset="/cafe-centrale/assets/_b0W_Pjt9r-600-CRuqF3AK.webp 600w"><img src="/cafe-centrale/assets/_b0W_Pjt9r-600-CqoFJjvS.jpeg" alt="" width="600" height="800"></picture>
+  </l-frame>
+<l-frame style="--n: 3; --d: 4">
+    <picture><source type="image/webp" srcset="/cafe-centrale/assets/fUBX1I44Gu-600-C0yjzPG_.webp 600w"><img src="/cafe-centrale/assets/fUBX1I44Gu-600-C-Joh1Rc.jpeg" alt="" width="600" height="800"></picture>
+  </l-frame>
+<l-frame style="--n: 3; --d: 4">
+    <picture><source type="image/webp" srcset="/cafe-centrale/assets/WLJleJdape-600-DrqAND0v.webp 600w"><img src="/cafe-centrale/assets/WLJleJdape-600-CUIDnq0u.jpeg" alt="" width="600" height="800"></picture>
+  </l-frame>
+</l-grid>
+
+		<l-sidebar data-side="" style="--side-width: 45ch">
+  <l-frame slot="start">
+    <picture><source type="image/webp" srcset="/cafe-centrale/assets/l7m826ovZw-2500-C7rhEfaM.webp 2500w"><img src="/cafe-centrale/assets/l7m826ovZw-2500-DQjn_9ns.jpeg" alt="Ein Bild von Gästen, die vor dem Café sitzen, und Romeo, der im Eingang steht und das Treiben beobachtet." width="2500" height="1515"></picture>
+  </l-frame>
+  <l-box slot="end">
+    <l-stack style="--space: var(--space-s)">
+      <h2>Ciao Pasta-Lovers</h2>
+      <p>
+        Genießen Sie im Café Centrale leckere hausgemachte vegane Pasta, Gnocchi
+        und Ravioli mit verschiedenen Saucen in gemütlicher Atmosphäre! Perfekt
+        für eine Mittagspause mit Kollegen oder Freunden.
+      </p>
+    </l-stack>
+  </l-box>
+</l-sidebar>
+
+	</l-stack>
 </l-container>
 </template>
   
