@@ -25,7 +25,7 @@ const styles = `
 
 	@container header (width >= 768px) {
 		:host(.is-stuck) a {
-			block-size: var(--space-2xl);
+			block-size: var(--space-xl);
 		}
 	}
 `;

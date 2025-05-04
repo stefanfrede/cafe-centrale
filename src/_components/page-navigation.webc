@@ -1,16 +1,5 @@
-<script webc:setup>
-	const t = new Intl.DateTimeFormat("de-DE", {
-    hour: "2-digit",
-    timeZone: "Europe/Berlin",
-  }).format(date);
-
-	const items = t >= 12 && t <= 16
-		? $data.navigation.day
-		: $data.navigation.evening;
-</script>
-
 <ul :slot="slot">
-  <li webc:for="item of items">
-		<a :href="item.target" @text="item.label"></a>
+  <li webc:for="item of $data.navigation" :class="item.id">
+		<a :href="`#${item.id}`" @text="item.label"></a>
 	</li>
-</ul
+</ul>

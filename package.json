@@ -21,11 +21,7 @@
 		"type": "git",
 		"url": ""
 	},
-	"keywords": [
-		"eleventy",
-		"docker",
-		"webc"
-	],
+	"keywords": ["eleventy", "docker", "webc"],
 	"author": {
 		"name": "Stefan Frede",
 		"email": "web.5173@frede.email",
@@ -53,6 +49,7 @@
 	},
 	"dependencies": {
 		"@11ty/eleventy-img": "^6.0.2",
-		"@11ty/eleventy-plugin-vite": "^6.0.0"
+		"@11ty/eleventy-plugin-vite": "^6.0.0",
+		"@js-temporal/polyfill": "^0.5.1"
 	}
 }

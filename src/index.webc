@@ -30,5 +30,7 @@ layout: base.webc
 	<l-stack>
 		<page-teaser></page-teaser>
 		<page-welcome></page-welcome>
+		<pasta-of-the-day webc:if="$data.collections.potd.length"></pasta-of-the-day>
+		<evening-menu></evening-menu>
 	</l-stack>
 </l-container>

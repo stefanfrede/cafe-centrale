@@ -1,0 +1,3 @@
+<script webc:type="js">
+  `<abbr class="ingredient" title="${$data.ingredientList[label]}">${label}</abbr>`;
+</script>

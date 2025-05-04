@@ -56,6 +56,23 @@ export default async function (eleventyConfig) {
 			},
 		},
 	});
+
+	eleventyConfig.addCollection('potd', (collectionApi) => {
+		return collectionApi
+			.getFilteredByGlob('./src/pasta-of-the-day/*.md')
+			.sort((a, b) => (Number(a.data.order) > Number(b.data.order) ? 1 : -1))
+			.filter((x) => {
+				const t = new Date();
+				const msToday = new Date(
+					t.getFullYear(),
+					t.getMonth(),
+					t.getDate(),
+				).getTime();
+				const msPotd = new Date(x.date).getTime();
+
+				return msPotd === msToday;
+			});
+	});
 }
 
 export const config = {
