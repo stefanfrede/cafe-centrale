@@ -139,16 +139,12 @@ class Navigation extends HTMLElement {
 					const f = t.getAttribute('aria-expanded');
 					const isExpanded = f === 'true';
 
-					t.setAttribute(
-						'aria-expanded',
-						isExpanded ? 'false' : 'true'
-					);
+					t.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
 
 					if (isExpanded) {
 						this.#nav.setAttribute('hidden', '');
 					} else {
 						this.#nav.removeAttribute('hidden');
-
 					}
 				});
 			}
@@ -158,9 +154,7 @@ class Navigation extends HTMLElement {
 			const slot = e.target;
 
 			if (slot.assignedNodes().length) {
-				const [ul] = slot
-					.assignedNodes()
-					.filter((node) => node.nodeType === 1);
+				const [ul] = slot.assignedNodes().filter((node) => node.nodeType === 1);
 
 				const links = ul.querySelectorAll('a');
 
@@ -170,7 +164,13 @@ class Navigation extends HTMLElement {
 
 						const id = link.getAttribute('href');
 
-						globalThis.getElementById(id).scrollIntoView();
+						const scrollMarginTop =
+							globalThis.document.querySelector('p-header').offsetHeight;
+
+						const elem = globalThis.document.getElementById(id.substring(1));
+						elem.style.scrollMarginTop = `${scrollMarginTop}px`;
+
+						elem.scrollIntoView();
 					});
 				}
 			}

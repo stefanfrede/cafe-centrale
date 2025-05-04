@@ -1,0 +1,11 @@
+<ul id="evening-menu-items">
+  <li webc:for="(item, index) of $data.eveningMenu" :id="`evening-menu-item-${index}`">
+		<div @text="item.label" class="label"></div>
+		<strong @text="item.price" class="price"></strong>
+		<ul class="description ingredients">
+			<li webc:for="ingredient of item.ingredients">
+				<abbr webc:is="in-gredient" :@label="ingredient"></abbr>
+			</li>
+		</ul>
+	</li>
+</ul>

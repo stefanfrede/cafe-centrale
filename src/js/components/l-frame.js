@@ -7,6 +7,8 @@ const styles = `
 	div {
 		--_n: var(--n, 16);
 		--_d: var(--d, 9);
+		--_f: var(--f, "cover");
+		--_p: var(--p, "center");
 
 		align-items: center;
 		aspect-ratio: var(--_n) / var(--_d);
@@ -16,10 +18,16 @@ const styles = `
 	  overflow: crop;
 
 		& > ::slotted(img),
+		& > ::slotted(picture),
 		& > ::slotted(video) {
 			block-size: 100% !important;
 			inline-size: 100% !important;
-			object-fit: cover;
+		}
+
+		& > ::slotted(img),
+		& > ::slotted(video) {
+			object-fit: var(--_f);
+			object-position: var(--_p);
 		}
 	}
 `;
@@ -33,7 +41,7 @@ template.innerHTML = `
 
 class Frame extends HTMLElement {
 	static get observedAttributes() {
-		return ['data-ratio'];
+		return ['data-fit', 'data-position', 'data-ratio'];
 	}
 
 	constructor() {
@@ -50,10 +58,43 @@ class Frame extends HTMLElement {
 		sheet.replaceSync(styles);
 
 		this.shadowRoot.adoptedStyleSheets.push(sheet);
+
+		const slot = this.shadowRoot.querySelector('slot');
+
+		slot.addEventListener('slotchange', (e) => {
+			const slot = e.target;
+
+			if (slot.assignedNodes().length) {
+				const [node] = slot
+					.assignedNodes()
+					.filter((node) => node.nodeType === 1);
+
+				if (node.nodeName === 'PICTURE') {
+					const img = node.querySelector('img');
+
+					img.style.blockSize = '100%';
+					img.style.inlineSize = '100%';
+					img.style.objectFit = this.dataset.fit ?? 'cover';
+					img.style.objectPosition = this.dataset.position ?? 'center';
+				}
+			}
+		});
 	}
 
 	connectedCallback() {
 		this.#adoptStyles(styles);
+	}
+
+	#setObjectFit(value) {
+		if (value) {
+			this.style.setProperty('--f', value);
+		}
+	}
+
+	#setObjectPosition(value) {
+		if (value) {
+			this.style.setProperty('--p', value);
+		}
 	}
 
 	#setRatio(ratio) {
@@ -66,6 +107,14 @@ class Frame extends HTMLElement {
 	}
 
 	attributeChangedCallback(name, oldValue, newValue) {
+		if (name === 'data-fit' && oldValue !== newValue) {
+			this.#setObjectFit(newValue);
+		}
+
+		if (name === 'data-position' && oldValue !== newValue) {
+			this.#setObjectPosition(newValue);
+		}
+
 		if (name === 'data-ratio' && oldValue !== newValue) {
 			this.#setRatio(newValue);
 		}

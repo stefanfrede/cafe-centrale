@@ -1,0 +1,29 @@
+<div id="ingredients-explainer">
+  <h5>Inhaltsstoffe</h5>
+  <dl class="ingredients">
+    <dt>
+			<abbr webc:is="in-gredient" @label="A"></abbr>
+    </dt>
+    <dl>Glutenhaltiges Getreide</dl>
+    <dt>
+			<abbr webc:is="in-gredient" @label="B"></abbr>
+    </dt>
+    <dl>Eier</dl>
+    <dt>
+			<abbr webc:is="in-gredient" @label="D"></abbr>
+    </dt>
+    <dl>Milch</dl>
+    <dt>
+			<abbr webc:is="in-gredient" @label="H"></abbr>
+    </dt>
+    <dl>Krebstiere</dl>
+    <dt>
+			<abbr webc:is="in-gredient" @label="I"></abbr>
+    </dt>
+    <dl>Fische</dl>
+    <dt>
+			<abbr webc:is="in-gredient" @label="K"></abbr>
+    </dt>
+    <dl>Schalenfrüchte</dl>
+  </dl>
+</div>
