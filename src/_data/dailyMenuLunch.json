@@ -1,0 +1,50 @@
+{
+	"Antipasti": [
+		{
+			"label": "Vitello Tonnato",
+			"price": "€ 19,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		}
+	],
+	"Pasta": [
+		{
+			"label": "Carbonara mit Melone und Rucola",
+			"price": "€ 15,90",
+			"ingredients": ["A", "B"],
+			"vegan": false
+		},
+		{
+			"label": "Hausgemachte Pasta mit Scampi, Kirschtomaten und Zucchini",
+			"price": "€ 18,90",
+			"ingredients": ["A", "H"],
+			"vegan": false
+		},
+		{
+			"label": "Hausgemachte Pasta mit Spargel, Kirschtomaten, Aglio Olio und Rucola",
+			"price": "€ 16,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		},
+		{
+			"label": "Hausgemachte Pasta mit Spargel, Kirschtomaten, Rucola und San Daniele Schinken (24 Monate gereift)",
+			"price": "€ 21,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		},
+		{
+			"label": "Hausgemachte Pasta mit frischem Thunfisch, Aglio Olio, Kapern, Kirschtomaten und Rucola",
+			"price": "€ 18,90",
+			"ingredients": ["A", "I"],
+			"vegan": false
+		}
+	],
+	"Zuppa": [
+		{
+			"label": "Tomatensuppe mit Basilikum und Crème fraiche",
+			"price": "€ 8,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		}
+	]
+}

@@ -1,0 +1,28 @@
+<l-grid id="about-romeo">
+  <l-box>
+    <l-stack style="--space: var(--space-s)">
+      <h2>Romeo Turella</h2>
+      <p>
+				In Norditalien geboren, habe ich (nach ein paar Zwischenstationen) Ottensen zu meiner Wahlheimat gewählt.
+			</p>
+			<p>
+				Vor etwa 20 Jahren habe ich mit einer Café-Bar und kleinem Frühstücksangebot gestartet, nun ist das Café Centrale zu einem richtigen Pastaladen geworden, bei dem ich inzwischen zur Herstellung eigener veganer Pasta übergegangen bin.
+			</p>
+			<p>
+				Neben den Klassikern an Saucen werden wir täglich für die Tagespasta kreativ. Eine Pasta Bolognese mit Pfirsich oder eine Pasta mit Pfifferlingen, Ricotta und Blaubeeren sind da keine Seltenheit mehr.
+			</p>
+			<p>
+				So versuche ich täglich meine Gäste nach Italien mitzunehmen, an einen großen Tisch mit einem köstlich riechenden Teller Pasta, netten Gesprächen und einem abschließenden Espresso an der Bar.
+			</p>
+			<p>
+				Wer Italien mag, wird das Café Centrale lieben!
+			</p>
+    </l-stack>
+  </l-box>
+  <l-frame data-ratio="3:4">
+    <img
+      src="/img/romeo-turella.jpg"
+      alt="Ein Bild von Romeo beim Kaffee einschenken."
+    />
+  </l-frame>
+</l-grid>

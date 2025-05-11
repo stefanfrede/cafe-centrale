@@ -1,0 +1,22 @@
+<l-grid id="menu-lunch">
+  <l-box>
+    <l-stack style="--space: var(--space-s)">
+      <h2>Tageskarte</h2>
+      <p class="lead">
+        Unsere täglich wechselnden Pasta-Gerichte:
+      </p>
+			<order-at-the-counter></order-at-the-counter>
+      <menu-items :@menu="$data.dailyMenuLunch"></menu-items>
+    </l-stack>
+  </l-box>
+  <l-box>
+    <l-stack style="--space: var(--space-s)">
+      <h2>Mittagskarte</h2>
+      <p class="lead">
+				Unsere hausgemachten Pasta-Gerichte:
+      </p>
+			<order-at-the-counter></order-at-the-counter>
+      <menu-items :@menu="$data.classicMenuLunch"></menu-items>
+    </l-stack>
+  </l-box>
+</l-grid>

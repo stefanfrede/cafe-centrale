@@ -1,0 +1,106 @@
+{
+	"Antipasti": [
+		{
+			"label": "Antipasti-Teller",
+			"price": "€ 16,90",
+			"ingredients": ["K"],
+			"vegan": true
+		}
+	],
+	"Pasta": [
+		{
+			"label": "Aglio Olio",
+			"price": "€ 11,90",
+			"ingredients": ["A"],
+			"vegan": true
+		},
+		{
+			"label": "Arrabiata",
+			"price": "€ 12,90",
+			"ingredients": ["A"],
+			"vegan": true
+		},
+		{
+			"label": "Pecorino",
+			"price": "€ 14,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		},
+		{
+			"label": "Carbonara",
+			"price": "€ 15,90",
+			"ingredients": ["A", "B"],
+			"vegan": false
+		},
+		{
+			"label": "Limone",
+			"price": "€ 12,90",
+			"ingredients": ["A"],
+			"vegan": true
+		},
+		{
+			"label": "Napoli",
+			"price": "€ 12,90",
+			"ingredients": ["A"],
+			"vegan": true
+		},
+		{
+			"label": "Bolognese",
+			"price": "€ 14,90",
+			"ingredients": ["A"],
+			"vegan": false
+		},
+		{
+			"label": "Pesto",
+			"price": "€ 14,90",
+			"ingredients": ["A", "K"],
+			"vegan": true
+		},
+		{
+			"label": "Amatriciana",
+			"price": "€ 14,90",
+			"ingredients": ["A"],
+			"vegan": true
+		}
+	],
+	"Ravioli": [
+		{
+			"label": "Mit Butter und Salbei, gefüllt mit Ricotta und Spinat",
+			"price": "€ 14,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		},
+		{
+			"label": "Mit Butter und Salbei, gefüllt mit Ricotta, Limette und Pistazien",
+			"price": "€ 15,90",
+			"ingredients": ["A", "D", "K"],
+			"vegan": false
+		},
+		{
+			"label": "Mit Butter und Salbei, gefüllt mit Schafskäse und getrockneten Tomaten",
+			"price": "€ 15,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		}
+	],
+	"Gnocchi": [
+		{
+			"label": "Mit Butter und Salbei, gefüllt mit Steinpilzen",
+			"price": "€ 14,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		},
+		{
+			"label": "Mit Butter und Salbei, gefüllt mit Mascarpone und Pesto Rosso mit Walnüssen",
+			"price": "€ 14,90",
+			"ingredients": ["A", "D", "K"],
+			"vegan": false
+		},
+		{
+			"label": "Mit Butter und Salbei, gefüllt mit Trüffel und Ziegenkäse",
+			"price": "€ 14,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		}
+	]
+}

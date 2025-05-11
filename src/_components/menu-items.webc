@@ -1,0 +1,17 @@
+<div webc:for="(key, value) in menu" class="menu-items">
+	<h3 @text="key"></h3>
+	<ul class="menu-item">
+	  <li webc:for="(item) of value">
+			<div @text="item.label" class="label"></div>
+			<strong @text="item.price" class="price"></strong>
+			<div webc:if="item.ingredients.length || item.vegan" class="description">
+				<ul webc:if="item.ingredients.length" class="ingredients">
+					<li webc:for="ingredient of item.ingredients">
+						<abbr webc:is="in-gredient" :@label="ingredient"></abbr>
+					</li>
+				</ul>
+				<div webc:if="item.vegan" class="vegan">Vegan</div>
+			</div>
+		</li>
+	</ul>
+</div>
