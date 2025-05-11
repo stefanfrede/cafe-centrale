@@ -1,0 +1,42 @@
+{
+	"Antipasti": [
+		{
+			"label": "Spargel in Butter mit San Daniele Schinken (24 Monate gereift)",
+			"price": "€ 21,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		},
+		{
+			"label": "Vitello Tonnato",
+			"price": "€ 21,90",
+			"ingredients": ["A", "D"],
+			"vegan": false
+		},
+		{
+			"label": "Thunfisch Carpaccio ",
+			"price": "€ 22,90",
+			"ingredients": ["A", "I"],
+			"vegan": false
+		}
+	],
+	"Pasta": [
+		{
+			"label": "Hausgemachte Pasta mit Spargel und San Daniele Schinken (24 Monate gereift)",
+			"price": "€ 22,90",
+			"ingredients": ["A"],
+			"vegan": false
+		},
+		{
+			"label": "Hausgemachte Pasta Carbonara mit frischem Thunfisch und Mandel",
+			"price": "€ 22,90",
+			"ingredients": ["A", "D", "I"],
+			"vegan": false
+		},
+		{
+			"label": "Hausgemachte Pasta mit Scampi, Austernpilze, Kirschtomaten, Zucchini und Rucola",
+			"price": "€ 21,90",
+			"ingredients": ["A"],
+			"vegan": false
+		}
+	]
+}

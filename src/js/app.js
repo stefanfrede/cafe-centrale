@@ -47,13 +47,13 @@ const app = () => {
 		const menu = params.get('menu');
 
 		const nodes = {
-			pastaOfTheDay: {
-				link: app.content.querySelector('.pasta-of-the-day'),
-				section: app.content.getElementById('pasta-of-the-day'),
+			menuLunch: {
+				link: app.content.querySelector('.menu-lunch'),
+				section: app.content.getElementById('menu-lunch'),
 			},
-			eveningMenu: {
-				link: app.content.querySelector('.evening-menu'),
-				section: app.content.getElementById('evening-menu'),
+			menuDinner: {
+				link: app.content.querySelector('.menu-dinner'),
+				section: app.content.getElementById('menu-dinner'),
 			},
 		};
 
@@ -89,32 +89,32 @@ const app = () => {
 			}
 		};
 
-		const pastaOfTheDay =
+		const menuLunch =
 			(dayOfWeek < 6 && hour >= 12 && hour < 16) ||
-			menu === 'day' ||
+			menu === 'lunch' ||
 			menu === 'all';
 
-		const eveningMenu =
+		const menuDinner =
 			(dayOfWeek === 6 && hour >= 12 && hour < 20) ||
 			((dayOfWeek === 4 || dayOfWeek === 5) && hour >= 16 && hour < 22) ||
-			menu === 'evening' ||
+			menu === 'dinner' ||
 			menu === 'all';
 
-		if (pastaOfTheDay || eveningMenu) {
-			if (pastaOfTheDay) {
-				show('pastaOfTheDay');
+		if (menuLunch || menuDinner) {
+			if (menuLunch) {
+				show('menuLunch');
 			} else {
-				hide('pastaOfTheDay');
+				hide('menuLunch');
 			}
 
-			if (eveningMenu) {
-				show('eveningMenu');
+			if (menuDinner) {
+				show('menuDinner');
 			} else {
-				hide('eveningMenu');
+				hide('menuDinner');
 			}
 		} else {
-			hide('eveningMenu');
-			hide('pastaOfTheDay');
+			hide('menuDinner');
+			hide('menuLunch');
 		}
 
 		document.body.appendChild(app.content, true);

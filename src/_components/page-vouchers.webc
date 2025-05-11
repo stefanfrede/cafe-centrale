@@ -1,0 +1,19 @@
+<l-sidebar id="vouchers" style="--side-width: 45ch" data-side>
+  <l-frame slot="start">
+    <img
+      src="/img/vouchers.jpg"
+      alt="Ein Bild von Gästen, die vor dem Café sitzen, und Romeo, der im Eingang steht und das Treiben beobachtet."
+    />
+  </l-frame>
+  <l-box slot="end">
+    <l-stack style="--space: var(--space-s)">
+      <h2>Gutscheine</h2>
+      <p>Möchtest du Italienischen Genuss verschenken?</p>
+      <p>
+        Im Café Centrale kannst du jederzeit einen Gutschein über den Betrag
+        deiner Wahl kaufen.
+      </p>
+      <p>Für mehr Infos, frag einfach beim Team nach.</p>
+    </l-stack>
+  </l-box>
+</l-sidebar>

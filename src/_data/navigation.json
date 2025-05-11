@@ -1,15 +1,11 @@
 [
 	{
-		"id": "pasta-of-the-day",
-		"label": "Pasta des Tages"
+		"id": "menu-lunch",
+		"label": "Tageskarte"
 	},
 	{
-		"id": "evening-menu",
+		"id": "menu-dinner",
 		"label": "Abendkarte"
-	},
-	{
-		"id": "classic-pasta",
-		"label": "Klassische Pasta"
 	},
 	{
 		"id": "wine-list",

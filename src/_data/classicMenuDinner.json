@@ -1,0 +1,80 @@
+{
+	"Antipasti": [
+		{
+			"label": "Oliven (100g)",
+			"price": "€ 8,90",
+			"ingredients": [],
+			"vegan": true
+		},
+		{
+			"label": "Antipasti-Teller",
+			"price": "€ 16,90",
+			"ingredients": ["K"],
+			"vegan": true
+		},
+		{
+			"label": "San Daniele Schinken (24 Monate gereift)",
+			"price": "€ 24,90",
+			"ingredients": [],
+			"vegan": false
+		}
+	],
+	"Pasta": [
+		{
+			"label": "Napoletana",
+			"price": "€ 16,90",
+			"ingredients": ["A"],
+			"vegan": false
+		},
+		{
+			"label": "Putanesca",
+			"price": "€ 18,90",
+			"ingredients": ["A", "K"],
+			"vegan": false
+		},
+		{
+			"label": "Pesto Rosso mit Walnüssen",
+			"price": "€ 17,90",
+			"ingredients": ["A"],
+			"vegan": false
+		},
+		{
+			"label": "Carbonara mit Guanciale",
+			"price": "€ 21,90",
+			"ingredients": ["A", "B"],
+			"vegan": false
+		},
+		{
+			"label": "Amattriciana mit Guanciale",
+			"price": "€ 21,90",
+			"ingredients": ["A"],
+			"vegan": false
+		},
+		{
+			"label": "Caccio e pepe mit Guanciale",
+			"price": "€ 21,90",
+			"ingredients": ["A"],
+			"vegan": false
+		}
+	],
+	"Gefüllte Pasta": [
+		{
+			"label": "Tortelloni gefüllt mit Trüffel und Ricotta",
+			"price": "€ 18,90",
+			"ingredients": ["A"],
+			"vegan": false
+		},
+		{
+			"label": "Rettangoloni gefüllt mit Krustentieren",
+			"price": "€ 18,90",
+			"ingredients": ["A", "K"],
+			"vegan": false
+		},
+		{
+			"label": "Cappellacci gefüllt Wildschwein und Apfel",
+			"price": "€ 18,90",
+			"ingredients": ["A"],
+			"vegan": false
+		}
+	]
+}
