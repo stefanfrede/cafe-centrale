@@ -18,8 +18,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/cafe-centrale/assets/favicon-16x16-gNfRCLEm.png">
 
     <link rel="manifest" href="/cafe-centrale/assets/site-BwHFeIBa.webmanifest">
-    <script type="module" crossorigin src="/cafe-centrale/assets/index-BywRgl98.js"></script>
-    <link rel="stylesheet" crossorigin href="/cafe-centrale/assets/index-BCxVpmMR.css">
+    <script type="module" crossorigin src="/cafe-centrale/assets/index--3fJwo24.js"></script>
+    <link rel="stylesheet" crossorigin href="/cafe-centrale/assets/index-BzbH2rw4.css">
   </head>
   <body>
     <template id="app"><l-container data-gutters="">
@@ -36,14 +36,11 @@
 				</l-icon>
 			</button>
 			<ul slot="nav">
-  <li class="pasta-of-the-day">
-		<a href="#pasta-of-the-day">Pasta des Tages</a>
+  <li class="menu-lunch">
+		<a href="#menu-lunch">Tageskarte</a>
 	</li>
-<li class="evening-menu">
-		<a href="#evening-menu">Abendkarte</a>
-	</li>
-<li class="classic-pasta">
-		<a href="#classic-pasta">Klassische Pasta</a>
+<li class="menu-dinner">
+		<a href="#menu-dinner">Abendkarte</a>
 	</li>
 <li class="wine-list">
 		<a href="#wine-list">Weinkarte</a>
@@ -90,113 +87,805 @@
   </l-box>
 </l-sidebar>
 
-		
-		<l-grid id="evening-menu">
+		<l-grid id="menu-lunch">
+  <l-box>
+    <l-stack style="--space: var(--space-s)">
+      <h2>Tageskarte</h2>
+      <p class="lead">
+        Unsere täglich wechselnden Pasta-Gerichte:
+      </p>
+			<l-icon data-with-icon="">
+  <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+    <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+  </svg>
+  <strong> Bitte am Tresen bestellen! </strong>
+</l-icon>
+
+      <div class="menu-items">
+	<h3>Antipasti</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Vitello Tonnato</div>
+			<strong class="price">€ 19,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="menu-items">
+	<h3>Pasta</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Carbonara mit Melone und Rucola</div>
+			<strong class="price">€ 15,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Eier" class="ingredient">B</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Hausgemachte Pasta mit Scampi, Kirschtomaten und Zucchini</div>
+			<strong class="price">€ 18,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Krebstiere" class="ingredient">H</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Hausgemachte Pasta mit Spargel, Kirschtomaten, Aglio Olio und Rucola</div>
+			<strong class="price">€ 16,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Hausgemachte Pasta mit Spargel, Kirschtomaten, Rucola und San Daniele Schinken (24 Monate gereift)</div>
+			<strong class="price">€ 21,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Hausgemachte Pasta mit frischem Thunfisch, Aglio Olio, Kapern, Kirschtomaten und Rucola</div>
+			<strong class="price">€ 18,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Fische" class="ingredient">I</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="menu-items">
+	<h3>Zuppa</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Tomatensuppe mit Basilikum und Crème fraiche</div>
+			<strong class="price">€ 8,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+
+    </l-stack>
+  </l-box>
+  <l-box>
+    <l-stack style="--space: var(--space-s)">
+      <h2>Mittagskarte</h2>
+      <p class="lead">
+				Unsere hausgemachten Pasta-Gerichte:
+      </p>
+			<l-icon data-with-icon="">
+  <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+    <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+  </svg>
+  <strong> Bitte am Tresen bestellen! </strong>
+</l-icon>
+
+      <div class="menu-items">
+	<h3>Antipasti</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Antipasti-Teller</div>
+			<strong class="price">€ 16,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Schalenfrüchte" class="ingredient">K</abbr>
+
+					</li>
+				</ul>
+				<div class="vegan">Vegan</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="menu-items">
+	<h3>Pasta</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Aglio Olio</div>
+			<strong class="price">€ 11,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				<div class="vegan">Vegan</div>
+			</div>
+		</li>
+<li>
+			<div class="label">Arrabiata</div>
+			<strong class="price">€ 12,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				<div class="vegan">Vegan</div>
+			</div>
+		</li>
+<li>
+			<div class="label">Pecorino</div>
+			<strong class="price">€ 14,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Carbonara</div>
+			<strong class="price">€ 15,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Eier" class="ingredient">B</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Limone</div>
+			<strong class="price">€ 12,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				<div class="vegan">Vegan</div>
+			</div>
+		</li>
+<li>
+			<div class="label">Napoli</div>
+			<strong class="price">€ 12,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				<div class="vegan">Vegan</div>
+			</div>
+		</li>
+<li>
+			<div class="label">Bolognese</div>
+			<strong class="price">€ 14,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Pesto</div>
+			<strong class="price">€ 14,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Schalenfrüchte" class="ingredient">K</abbr>
+
+					</li>
+				</ul>
+				<div class="vegan">Vegan</div>
+			</div>
+		</li>
+<li>
+			<div class="label">Amatriciana</div>
+			<strong class="price">€ 14,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				<div class="vegan">Vegan</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="menu-items">
+	<h3>Ravioli</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Mit Butter und Salbei, gefüllt mit Ricotta und Spinat</div>
+			<strong class="price">€ 14,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Mit Butter und Salbei, gefüllt mit Ricotta, Limette und Pistazien</div>
+			<strong class="price">€ 15,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+<li>
+						<abbr title="Schalenfrüchte" class="ingredient">K</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Mit Butter und Salbei, gefüllt mit Schafskäse und getrockneten Tomaten</div>
+			<strong class="price">€ 15,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="menu-items">
+	<h3>Gnocchi</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Mit Butter und Salbei, gefüllt mit Steinpilzen</div>
+			<strong class="price">€ 14,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Mit Butter und Salbei, gefüllt mit Mascarpone und Pesto Rosso mit Walnüssen</div>
+			<strong class="price">€ 14,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+<li>
+						<abbr title="Schalenfrüchte" class="ingredient">K</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Mit Butter und Salbei, gefüllt mit Trüffel und Ziegenkäse</div>
+			<strong class="price">€ 14,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+
+    </l-stack>
+  </l-box>
+</l-grid>
+
+		<l-grid id="menu-dinner">
   <l-box>
     <l-stack style="--space: var(--space-s)">
       <h2>Abendkarte</h2>
       <p class="lead">
-        Unser Angebot für Donnerstag und Freitag ab 16:00 Uhr und Samstag:
+        Unser Abendangebot:
       </p>
-      <l-icon data-with-icon="" style="margin-block-start: auto">
-        <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
-          <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-          <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
-        </svg>
-        <strong> Bitte am Tresen bestellen! </strong>
-      </l-icon>
-      <ul id="evening-menu-items">
-  <li id="evening-menu-item-0">
-		<div class="label">Hausgemachte Pasta Ricotta mit getrockneten Tomaten und Walnüssen.</div>
-		<strong class="price">€ 16,90</strong>
-		<ul class="description ingredients">
-			<li>
-				<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+			<l-icon data-with-icon="">
+  <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+    <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+  </svg>
+  <strong> Bitte am Tresen bestellen! </strong>
+</l-icon>
 
-			</li>
-		</ul>
-	</li>
-<li id="evening-menu-item-1">
-		<div class="label">Hausgemachte Pasta mit Gorgonzola, Apfel, Radicchio, Zitronenschale und Walnüssen.</div>
-		<strong class="price">€ 18,90</strong>
-		<ul class="description ingredients">
-			<li>
-				<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+      <div class="menu-items">
+	<h3>Antipasti</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Spargel in Butter mit San Daniele Schinken (24 Monate gereift)</div>
+			<strong class="price">€ 21,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
 
-			</li>
+					</li>
 <li>
-				<abbr title="Fische" class="ingredient">I</abbr>
+						<abbr title="Milch" class="ingredient">D</abbr>
 
-			</li>
-		</ul>
-	</li>
-<li id="evening-menu-item-2">
-		<div class="label">Hausgemachte Pasta Cacio e Pepe mit Guanciale.</div>
-		<strong class="price">€ 21,90</strong>
-		<ul class="description ingredients">
-			<li>
-				<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Vitello Tonnato</div>
+			<strong class="price">€ 21,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
 
-			</li>
-		</ul>
-	</li>
-<li id="evening-menu-item-3">
-		<div class="label">Hausgemachte Pasta mit Spargel, Kirschtomaten und Pecorino</div>
-		<strong class="price">€ 19,90</strong>
-		<ul class="description ingredients">
-			<li>
-				<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
 
-			</li>
-		</ul>
-	</li>
-</ul>
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Thunfisch Carpaccio </div>
+			<strong class="price">€ 22,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Fische" class="ingredient">I</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="menu-items">
+	<h3>Pasta</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Hausgemachte Pasta mit Spargel und San Daniele Schinken (24 Monate gereift)</div>
+			<strong class="price">€ 22,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Hausgemachte Pasta Carbonara mit frischem Thunfisch und Mandel</div>
+			<strong class="price">€ 22,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Milch" class="ingredient">D</abbr>
+
+					</li>
+<li>
+						<abbr title="Fische" class="ingredient">I</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Hausgemachte Pasta mit Scampi, Austernpilze, Kirschtomaten, Zucchini und Rucola</div>
+			<strong class="price">€ 21,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
+</div>
 
     </l-stack>
   </l-box>
-  <l-stack>
-	  <l-frame data-ratio="3:4" data-position="bottom">
-	    <picture><source type="image/webp" srcset="/cafe-centrale/assets/_b0W_Pjt9r-600-CRuqF3AK.webp 600w"><img src="/cafe-centrale/assets/_b0W_Pjt9r-600-CqoFJjvS.jpeg" alt="Ein Bild von einem Teller mit Pasta." width="600" height="800"></picture>
-	  </l-frame>
-	  <l-box>
-      <div id="ingredients-explainer">
-  <h5>Inhaltsstoffe</h5>
-  <dl class="ingredients">
-    <dt>
-			<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+  <l-box>
+    <l-stack style="--space: var(--space-s)">
+      <h2>Klassische Pasta</h2>
+      <p class="lead">
+				Unsere hausgemachten Pasta-Gerichte:
+      </p>
+			<l-icon data-with-icon="">
+  <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+    <path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path>
+  </svg>
+  <strong> Bitte am Tresen bestellen! </strong>
+</l-icon>
 
-    </dt>
-    <dl>Glutenhaltiges Getreide</dl>
-    <dt>
-			<abbr title="Eier" class="ingredient">B</abbr>
+      <div class="menu-items">
+	<h3>Antipasti</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Oliven (100g)</div>
+			<strong class="price">€ 8,90</strong>
+			<div class="description">
+				
+				<div class="vegan">Vegan</div>
+			</div>
+		</li>
+<li>
+			<div class="label">Antipasti-Teller</div>
+			<strong class="price">€ 16,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Schalenfrüchte" class="ingredient">K</abbr>
 
-    </dt>
-    <dl>Eier</dl>
-    <dt>
-			<abbr title="Milch" class="ingredient">D</abbr>
+					</li>
+				</ul>
+				<div class="vegan">Vegan</div>
+			</div>
+		</li>
+<li>
+			<div class="label">San Daniele Schinken (24 Monate gereift)</div>
+			<strong class="price">€ 24,90</strong>
+			
+		</li>
+	</ul>
+</div>
+<div class="menu-items">
+	<h3>Pasta</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Napoletana</div>
+			<strong class="price">€ 16,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
 
-    </dt>
-    <dl>Milch</dl>
-    <dt>
-			<abbr title="Krebstiere" class="ingredient">H</abbr>
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Putanesca</div>
+			<strong class="price">€ 18,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
 
-    </dt>
-    <dl>Krebstiere</dl>
-    <dt>
-			<abbr title="Fische" class="ingredient">I</abbr>
+					</li>
+<li>
+						<abbr title="Schalenfrüchte" class="ingredient">K</abbr>
 
-    </dt>
-    <dl>Fische</dl>
-    <dt>
-			<abbr title="Schalenfrüchte" class="ingredient">K</abbr>
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Pesto Rosso mit Walnüssen</div>
+			<strong class="price">€ 17,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
 
-    </dt>
-    <dl>Schalenfrüchte</dl>
-  </dl>
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Carbonara mit Guanciale</div>
+			<strong class="price">€ 21,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Eier" class="ingredient">B</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Amattriciana mit Guanciale</div>
+			<strong class="price">€ 21,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Caccio e pepe mit Guanciale</div>
+			<strong class="price">€ 21,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="menu-items">
+	<h3>Gefüllte Pasta</h3>
+	<ul class="menu-item">
+	  <li>
+			<div class="label">Tortelloni gefüllt mit Trüffel und Ricotta</div>
+			<strong class="price">€ 18,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Rettangoloni gefüllt mit Krustentieren</div>
+			<strong class="price">€ 18,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+<li>
+						<abbr title="Schalenfrüchte" class="ingredient">K</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+<li>
+			<div class="label">Cappellacci gefüllt Wildschwein und Apfel</div>
+			<strong class="price">€ 18,90</strong>
+			<div class="description">
+				<ul class="ingredients">
+					<li>
+						<abbr title="Glutenhaltiges Getreide" class="ingredient">A</abbr>
+
+					</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
 </div>
 
-	  </l-box>
-  </l-stack>
+    </l-stack>
+  </l-box>
+</l-grid>
+
+		<l-sidebar id="vouchers" data-side="" style="--side-width: 45ch">
+  <l-frame slot="start">
+    <picture><source type="image/webp" srcset="/cafe-centrale/assets/X0jK6iEoXP-3140-lQCMlPyr.webp 3140w"><img src="/cafe-centrale/assets/X0jK6iEoXP-3140-LReX7RoJ.jpeg" alt="Ein Bild von Gästen, die vor dem Café sitzen, und Romeo, der im Eingang steht und das Treiben beobachtet." width="3140" height="1890"></picture>
+  </l-frame>
+  <l-box slot="end">
+    <l-stack style="--space: var(--space-s)">
+      <h2>Gutscheine</h2>
+      <p>Möchtest du Italienischen Genuss verschenken?</p>
+      <p>
+        Im Café Centrale kannst du jederzeit einen Gutschein über den Betrag
+        deiner Wahl kaufen.
+      </p>
+      <p>Für mehr Infos, frag einfach beim Team nach.</p>
+    </l-stack>
+  </l-box>
+</l-sidebar>
+
+		<l-grid id="about-romeo">
+  <l-box>
+    <l-stack style="--space: var(--space-s)">
+      <h2>Romeo Turella</h2>
+      <p>
+				In Norditalien geboren, habe ich (nach ein paar Zwischenstationen) Ottensen zu meiner Wahlheimat gewählt.
+			</p>
+			<p>
+				Vor etwa 20 Jahren habe ich mit einer Café-Bar und kleinem Frühstücksangebot gestartet, nun ist das Café Centrale zu einem richtigen Pastaladen geworden, bei dem ich inzwischen zur Herstellung eigener veganer Pasta übergegangen bin.
+			</p>
+			<p>
+				Neben den Klassikern an Saucen werden wir täglich für die Tagespasta kreativ. Eine Pasta Bolognese mit Pfirsich oder eine Pasta mit Pfifferlingen, Ricotta und Blaubeeren sind da keine Seltenheit mehr.
+			</p>
+			<p>
+				So versuche ich täglich meine Gäste nach Italien mitzunehmen, an einen großen Tisch mit einem köstlich riechenden Teller Pasta, netten Gesprächen und einem abschließenden Espresso an der Bar.
+			</p>
+			<p>
+				Wer Italien mag, wird das Café Centrale lieben!
+			</p>
+    </l-stack>
+  </l-box>
+  <l-frame data-ratio="3:4">
+    <picture><source type="image/webp" srcset="/cafe-centrale/assets/raTxwhS3wK-1679-BGI0cNwN.webp 1679w"><img src="/cafe-centrale/assets/raTxwhS3wK-1679-iv65TCGO.jpeg" alt="Ein Bild von Romeo beim Kaffee einschenken." width="1679" height="1696"></picture>
+  </l-frame>
 </l-grid>
 
 	</l-stack>
