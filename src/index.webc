@@ -4,7 +4,7 @@ layout: base.webc
 
 <l-container data-gutters>
 	<p-header>
-	  <img src="/img/logo.png" alt="Cafe Centralé" />
+	  <img src="/media/logo.png" alt="Cafe Centralé" />
 		<p-navigation slot="navigation">
 			<button>
 				<l-icon data-with-icon>
