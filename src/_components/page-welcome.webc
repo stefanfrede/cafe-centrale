@@ -1,7 +1,7 @@
 <l-sidebar style="--side-width: 45ch" data-side>
   <l-frame slot="start">
     <img
-      src="/img/front-of-cafe.jpg"
+      src="/media/front-of-cafe.jpg"
       alt="Ein Bild von Gästen, die vor dem Café sitzen, und Romeo, der im Eingang steht und das Treiben beobachtet."
     />
   </l-frame>

@@ -1,5 +1,5 @@
 <script webc:type="js">
-  const description = $data.meta.description;
+  const description = $data.site.description;
 
   `<meta name="description" content="${description}" />`;
 </script>

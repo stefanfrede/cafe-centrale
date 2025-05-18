@@ -1,5 +1,5 @@
 <l-grid>
   <l-frame webc:for="item of $data.teaser" data-ratio="3:4">
-    <img :src="`/img/${item.name}`" :alt="item.alt" />
+    <img :src="`/media/${item.name}`" :alt="item.alt" />
   </l-frame>
 </l-grid>
