@@ -30,7 +30,7 @@ content:
             label: First name
             type: string
           - name: last_name
-            label: last name
+            label: Last name
             type: string
           - name: email
             label: Email address
