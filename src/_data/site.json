@@ -1,11 +1,11 @@
 {
-	"title": "doty",
-	"description": "A containerised minimal starter kit for Eleventy with custom elements.",
-	"url": "https://doty.frede.dev",
-	"author": {
-		"first_name": "Stefan",
-		"last_name": "Frede",
-		"email": "web.5173@frede.email",
-		"url": "https://www.frede.dev/"
-	}
+  "title": "Café Centrale",
+  "description": "The website of Café Centrale, an Italian bistro in Hamburg Ottensen.",
+  "url": "https://cafecentrale.com/",
+  "author": {
+    "first_name": "Stefan",
+    "last_name": "Frede",
+    "email": "web.5173@frede.email",
+    "url": "https://www.frede.dev/"
+  }
 }
